@@ -41,7 +41,7 @@
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="20dp"
                 android:layout_below="@+id/titleTV"/>
-            <TextView
+            <EditText
                 android:id="@+id/dailyRentTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -54,7 +54,8 @@
                 android:text="@string/dailyRent"
                 android:gravity="center"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:enabled="false"/>
 
 
             <LinearLayout
@@ -103,7 +104,7 @@
                 android:layout_marginEnd="20dp"
                 android:layout_below="@+id/dayCountGroup"
                 android:layout_marginTop="20dp"
-                android:max="10"
+                android:max="30"
                 android:min="0"
                 android:thumbTint="@color/black"
                 android:indeterminateTint="@color/black"
