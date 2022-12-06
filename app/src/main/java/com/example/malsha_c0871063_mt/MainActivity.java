@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         binding.viewDetailsBtn.setOnClickListener(
                 v -> {
-                    if(selectedCar == null){
+                    if(selectedCar == null || selectedCar.getName().equalsIgnoreCase("Please choose a car")){
                         Toast.makeText(this, "Please select the car.", Toast.LENGTH_SHORT).show();
                     }else {
                             if (days != 0) {
