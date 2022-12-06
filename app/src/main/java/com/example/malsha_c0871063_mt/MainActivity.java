@@ -102,7 +102,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         if(selectedCar != null) {
             double priceForDayCount = days * selectedCar.getPrice();
             int dealId = binding.ageButtonGroup.getCheckedRadioButtonId();
-            age = ((RadioButton) findViewById(dealId)).getText().toString();
+            if (dealId > 0) {
+                age = ((RadioButton) findViewById(dealId)).getText().toString();
+            }
             double optionAmount = amountForOptions();
             double totalPrice = priceForDayCount + optionAmount + amountForAge;
             double taxAmount = totalPrice * tax;

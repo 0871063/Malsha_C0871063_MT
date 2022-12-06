@@ -32,7 +32,7 @@ public class CarListActivity extends AppCompatActivity {
     }
     private void loaCarData(int position){
         Intent intent = new Intent(getApplicationContext(), CarDetailsActivity.class);
-        intent.putExtra("position", position);
+        intent.putExtra("position", String.valueOf(position));
         startActivity(intent);
     }
 }

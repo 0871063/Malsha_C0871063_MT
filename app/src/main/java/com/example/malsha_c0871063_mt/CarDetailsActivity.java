@@ -22,8 +22,9 @@ public class CarDetailsActivity extends AppCompatActivity {
         setContentView(view);
 
         Intent intent = getIntent();
-        int position = intent.getShortExtra("position");
-        RentCar car = RentCar.rentCarList.get(position);
+        String position = intent.getStringExtra("position");
+        int index = Integer.parseInt(position);
+        RentCar car = RentCar.rentCarList.get(index);
         binding.carDetailTV.setText(car.toString());
     }
 

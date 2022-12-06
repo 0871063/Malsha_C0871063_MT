@@ -31,28 +31,16 @@
                 android:textStyle="bold"
                 android:gravity="center"/>
 
-            <TextView
-                android:id="@+id/carTV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/titleTV"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="20dp"
-                android:text="@string/subTitle"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+
 
             <Spinner
                 android:id="@+id/carSpinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="40dp"
                 android:layout_marginEnd="20dp"
-                android:layout_below="@+id/carTV"/>
+                android:layout_below="@+id/titleTV"/>
             <TextView
                 android:id="@+id/dailyRentTV"
                 android:layout_width="wrap_content"
@@ -64,24 +52,10 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="20dp"
                 android:text="@string/dailyRent"
-                android:textSize="16sp"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <EditText
-                android:id="@+id/dailyRentET"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/dailyRentTV"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp"
-                android:ems="10"
-                android:enabled="false"
-                android:hint="@string/dailyRent"
-                android:inputType="textPersonName"
-                android:text="0" />
 
             <LinearLayout
                 android:id="@+id/dayCountGroup"
@@ -90,7 +64,7 @@
                 android:orientation="horizontal"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_below="@+id/dailyRentET">
+                android:layout_below="@+id/dailyRentTV">
             <TextView
                 android:id="@+id/daysTV"
                 android:layout_width="wrap_content"
@@ -280,7 +254,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/view_details"
-                android:enabled="false"
                 android:layout_below="@+id/priceGroup"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
