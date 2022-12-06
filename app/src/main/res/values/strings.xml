@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Malsha_C0871063_MT</string>
+    <string name="title">Car Rent Service</string>
+    <string name="subTitle">Please choose a car</string>
+    <string name="dailyRent">Daily Rent</string>
+    <string name="days">How many days you want to rent? </string>
+    <string name="age">Driver\'s Age</string>
+    <string name="less_than_twenty">Less than 20</string>
+    <string name="between_twenty">Between 20 and 60</string>
+    <string name="above_sixty">aAbove 60</string>
+    <string name="options">Options</string>
+    <string name="gps">GPS</string>
+    <string name="child_seat">Child Seat</string>
+    <string name="millage">Unlimited millage</string>
+    <string name="amount">Amount</string>
+    <string name="total_price">Total Price</string>
+    <string name="view_details">View Details</string>
 </resources>
